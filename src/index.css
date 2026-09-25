@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 antialiased;
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Custom styles for professional academic look */
+.srm-blue-gradient {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+}
+
+.srm-border {
+  border-color: #e2e8f0;
+}
+
+/* Loading animations */
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.5; }
+  100% { transform: scale(0.95); opacity: 1; }
+}
+
+.pulse-glow {
+  animation: pulse-ring 2s infinite ease-in-out;
+}
